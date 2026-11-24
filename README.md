@@ -4,16 +4,10 @@
 
 # THE WORLD — Tuesday 24 November 2026
 
-One day, one page: a newspaper front page that sums up 23 stories from five continents in a single image — the Nvidia leadership turmoil as the lead, a dotted world map with a marker for every story, twelve news cards, a by-the-numbers rail, nine world briefs, and the day's sport.
+One page, one day: a newspaper front page that sums up 23 stories from five continents in a single 1024x1024 image — a lead story on Jensen Huang's return to Nvidia, twelve story cards, a dotted world map with a marker for every story, a by-the-numbers rail, nine world briefs, and the day's sport.
 
-Run it with:
-
-```
-python3 main.py
-```
-
-That writes `entry.png` (1024x1024) in the current directory. The program is pure Python 3 standard library (zlib, base64, json, struct, math), uses no network, and is fully deterministic — the same bytes on every run.
+Run `python3 main.py` to generate `entry.png`. The program is pure Python standard library (no dependencies, no network) and fully deterministic — the same bytes on every run. The PNG is written into the directory named by the `MAKEFUN_OUTPUT_DIR` environment variable, or into the current directory when that variable is not set.
 
 ## License
 
-MIT
+MIT License — see the LICENSE file in this repository.
